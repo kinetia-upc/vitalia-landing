@@ -719,7 +719,6 @@ body {
 /* ===================================
    CONTACT SECTION
    =================================== */
-
 .contact {
     padding: 44px 0 100px;
     background-color: var(--dark-bg);
@@ -770,3 +769,41 @@ body {
     color: var(--text-muted);
     font-size: 14px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    background-color: #0d0d0d;
+    border: 1px solid #111;
+    padding: 18px 18px;
+    border-radius: 22px;
+    color: var(--text-light);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: var(--text-muted);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: rgba(30, 41, 59, 0.95);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 132px;
+    font-family: inherit;
+}
+
+.btn-send {
+    width: 100%;
+    margin-top: 12px;
+}
+
