@@ -1,0 +1,594 @@
+/* ===================================
+   GLOBAL STYLES & VARIABLES
+   =================================== */
+:root {
+    --primary-color: #00d9d9;
+    --primary-soft: #65d4db;
+    --secondary-color: #1a1a1a;
+    --dark-bg: #0a0a0a;
+    --panel-bg: #171717;
+    --text-light: #ffffff;
+    --text-muted: #b0b0b0;
+    --border-color: #303030;
+    --card-bg: #181818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-soft) 0%, #2aa8b2 100%);
+    color: #000;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #7ae0e6 0%, #31b6bf 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 217, 217, 0.28);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--panel-bg);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-learn-more {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    color: var(--primary-color);
+}
+
+/* ===================================
+   HEADER / NAVIGATION
+   =================================== */
+.header {
+    background-color: transparent;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: block;
+}
+
+.nav-shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    background-color: rgba(24, 24, 24, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 28px;
+    padding: 8px 12px 8px 28px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #00b8b8;
+}
+
+.nav-pill {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-pill a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-pill a:hover {
+    color: var(--primary-color);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-arrow {
+    font-size: 9px;
+}
+
+.nav-cta {
+    min-width: 164px;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero {
+    padding: 82px 0 96px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.03fr) minmax(420px, 0.97fr);
+    gap: 52px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(44px, 5vw, 60px);
+    line-height: 1.04;
+    margin-bottom: 28px;
+    color: var(--text-light);
+    max-width: 620px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.hero-text > p {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 34px;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Hero Card */
+.hero-image {
+    position: relative;
+}
+
+.hero-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+    object-fit: cover;
+    box-shadow: 0 24px 80px rgba(0, 217, 217, 0.12);
+}
+
+/* ===================================
+   SECTION HEADERS
+   =================================== */
+.section-header {
+    text-align: left;
+    margin-bottom: 60px;
+    max-width: 760px;
+}
+
+.section-label {
+    display: inline-block;
+    background-color: rgba(101, 212, 219, 0.45);
+    color: var(--text-light);
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    min-width: 156px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: clamp(36px, 4.2vw, 52px);
+    margin-bottom: 14px;
+    color: var(--text-light);
+    line-height: 1.12;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+/* ===================================
+   FEATURES SECTION
+   =================================== */
+.features {
+    padding: 54px 0 100px;
+    background-color: var(--dark-bg);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    padding: 16px 18px 18px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 186px;
+}
+
+.feature-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 217, 217, 0.15);
+}
+
+.feature-image {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-soft);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-top: 4px;
+    line-height: 1.15;
+    font-weight: 500;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+.footer {
+    background-color: transparent;
+    border-top: 1px solid var(--border-color);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav-shell {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .features-grid,
+    .clients-grid,
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-featured {
+        transform: scale(1);
+        margin: 0;
+    }
+
+    .contact-wrapper,
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+    .nav-shell {
+        padding: 18px 18px 20px;
+        gap: 18px;
+        border-radius: 24px;
+    }
+
+    .nav-pill {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 14px 24px;
+    }
+
+    .btn-primary {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .hero-buttons .btn-primary {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .features,
+    .who-is-vitalia,
+    .plans,
+    .contact,
+    .about {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .section-header p {
+        font-size: 15px;
+    }
+
+    .features-grid,
+    .clients-grid,
+    .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .plan-featured {
+        border-color: rgba(101, 212, 219, 0.85);
+        background: linear-gradient(180deg, #6fdbe3 0%, #2aa6b0 100%);
+    }
+
+    .contact-wrapper,
+    .about-wrapper {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .feature-card,
+    .client-card,
+    .plan-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .nav-shell {
+        padding: 16px;
+    }
+
+    .logo-section,
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-pill {
+        gap: 12px 18px;
+    }
+
+    .nav-cta {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text > p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-learn-more {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    .plan-card h3 {
+        font-size: 34px;
+    }
+
+    .price {
+        font-size: 44px;
+    }
+
+    .contact-wrapper {
+        padding: 30px 15px;
+    }
+
+    .about-wrapper {
+        padding: 30px 15px;
+    }
+
+    .about-image img {
+        max-width: 250px;
+    }
+}
