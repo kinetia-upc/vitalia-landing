@@ -715,3 +715,34 @@ body {
         max-width: 250px;
     }
 }
+
+/* ===================================
+   CONTACT SECTION
+   =================================== */
+
+.contact {
+    padding: 44px 0 100px;
+    background-color: var(--dark-bg);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    background-color: var(--card-bg);
+    padding: 58px 44px 36px;
+    border-radius: 26px;
+    border: 1px solid var(--border-color);
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.contact-info > p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 16px;
+}
