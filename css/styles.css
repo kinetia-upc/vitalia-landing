@@ -316,11 +316,10 @@ body {
 }
 
 .feature-image {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: var(--primary-soft);
-    border-radius: 4px;
-    object-fit: cover;
+    border-radius: 8px;
 }
 
 .feature-card h3 {
@@ -338,8 +337,132 @@ body {
 }
 
 /* ===================================
+   PLANS SECTION
+   =================================== */
+
+.plans {
+    padding: 44px 0 100px;
+    background-color: var(--dark-bg);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+.plan-card {
+    background-color: var(--card-bg);
+    padding: 34px 28px 28px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    border-color: var(--primary-color);
+}
+
+.plan-card h3 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.plan-description {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 230px;
+}
+
+.plan-features {
+    list-style: disc;
+    padding-left: 22px;
+    flex-grow: 1;
+}
+
+.plan-features li {
+    padding: 4px 0;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.price {
+    font-size: 56px;
+    font-weight: 400;
+    color: var(--primary-color);
+    letter-spacing: -0.04em;
+}
+
+.period {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.plan-card button,
+.plan-card .btn-primary,
+.plan-card .btn-secondary {
+    width: 100%;
+    padding: 16px 20px;
+}
+
+/* Featured Plan Style */
+.plan-featured {
+    border-color: rgba(101, 212, 219, 0.85);
+    background: linear-gradient(180deg, #6fdbe3 0%, #2aa6b0 100%);
+    transform: scale(1.03);
+    margin: 0;
+    color: #111;
+}
+
+.plan-featured h3,
+.plan-featured .plan-description,
+.plan-featured .plan-features li,
+.plan-featured .period,
+.plan-featured .price {
+    color: #111;
+}
+
+.plan-featured .btn-primary {
+    background: #171717;
+    color: var(--text-light);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.plan-featured .btn-primary:hover {
+    background: #111;
+}
+
+.top-choice {
+    position: absolute;
+    top: -14px;
+    left: 18px;
+    background-color: #1b1b1b;
+    color: var(--text-light);
+    padding: 8px 32px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ===================================
    FOOTER
    =================================== */
+
 .footer {
     background-color: transparent;
     border-top: 1px solid var(--border-color);
