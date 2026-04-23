@@ -746,3 +746,27 @@ body {
     margin-bottom: 40px;
     font-size: 16px;
 }
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 42px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    font-size: 32px;
+    min-width: 44px;
+    line-height: 1;
+}
+
+.contact-item h4 {
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.contact-item p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
