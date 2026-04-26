@@ -1,0 +1,308 @@
+{
+  "en": {
+    "meta": {
+      "title": "Vitalia - Integrated Healthcare Management"
+    },
+    "languageSelector": {
+      "ariaLabel": "Change language"
+    },
+    "nav": {
+      "features": "Features",
+      "clients": "Clients",
+      "contact": "Contact Us",
+      "about": "About"
+    },
+    "buttons": {
+      "tryNow": "TRY IT NOW",
+      "learnMore": "Learn more",
+      "startFreeTrial": "START FREE TRIAL",
+      "getStarted": "GET STARTED",
+      "requestDemo": "REQUEST A DEMO",
+      "sendNow": "SEND NOW"
+    },
+    "hero": {
+      "title": "Integrated Healthcare Management, All in One Platform",
+      "description": "Manage patients, doctors, appointments, and medical records in one simple system."
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything you need to manage your clinic",
+      "description": "Save time, stay organized, and improve patient care",
+      "cards": {
+        "multiRole": {
+          "title": "Multi-Role Platform",
+          "description": "Admins, doctors, patients, and staff access customized dashboards based on their role."
+        },
+        "analytics": {
+          "title": "Real-Time Dashboard & Analytics",
+          "description": "Monitor patients, occupancy, revenue, and trends in real time."
+        },
+        "financial": {
+          "title": "Billing & Financial Control",
+          "description": "Track revenue, invoices, and payments in one place."
+        },
+        "workflow": {
+          "title": "Clinical Workflow Management",
+          "description": "Handle consultations, orders, and follow-ups efficiently"
+        },
+        "management": {
+          "title": "Scalable Clinic Management",
+          "description": "Adapt the system to your clinic's structure as it grows."
+        },
+        "pharmacy": {
+          "title": "Pharmacy & Medication Management",
+          "description": "Integrate pharmacy operations with prescriptions and inventory."
+        }
+      }
+    },
+    "clients": {
+      "label": "Who is Vitalia for?",
+      "title": "From solo practices to healthcare networks",
+      "description": "Whether you run a private practice or manage a large medical center, Vitalia adapts to your needs.",
+      "cards": {
+        "privatePractices": {
+          "title": "Private Practices",
+          "description": "Run your entire practice with ease. Manage patients, appointments, and records without complexity"
+        },
+        "clinics": {
+          "title": "Clinics & Medical Centers",
+          "description": "Keep your operations fully connected. Coordinate teams, schedules, and workflows in one system"
+        },
+        "networks": {
+          "title": "Healthcare Networks",
+          "description": "Scale with full visibility and control. Manage multiple locations from a single platform"
+        }
+      }
+    },
+    "plans": {
+      "label": "Plans",
+      "period": "/month",
+      "free": {
+        "name": "Free",
+        "description": "Try Vitalia with no commitment",
+        "features": {
+          "users": "Up to 2 users",
+          "records": "Basic patient records",
+          "appointments": "Appointment management",
+          "limited": "Limited features",
+          "access": "14-day access"
+        }
+      },
+      "starter": {
+        "badge": "Top choice",
+        "name": "Starter",
+        "description": "Perfect for private practices",
+        "features": {
+          "users": "Up to 5-10 users",
+          "records": "Patient records & history",
+          "scheduling": "Appointment scheduling",
+          "analytics": "Basic analytics",
+          "prescriptions": "Digital prescriptions"
+        }
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "For growing healthcare teams",
+        "features": {
+          "users": "More users & roles",
+          "analytics": "Advanced analytics",
+          "billing": "Billing & financial tools",
+          "pharmacy": "Pharmacy integration",
+          "support": "Priority support"
+        }
+      }
+    },
+    "contact": {
+      "label": "Contact Us",
+      "title": "Get in touch with us",
+      "description": "Have questions or want to see Vitalia in action? Our team is here to help.",
+      "items": {
+        "call": "Call",
+        "email": "Email",
+        "location": "Location"
+      },
+      "form": {
+        "name": "Name",
+        "email": "Email address",
+        "message": "Message"
+      }
+    },
+    "about": {
+      "label": "About",
+      "title": "About KinetiaLabs",
+      "paragraphOne": "KinetiaLabs is a technology company focused on building solutions that transform how healthcare systems operate.",
+      "paragraphTwo": "With a strong emphasis on integration and efficiency, we develop platforms like Vitalia to simplify clinical workflows, improve decision-making, and enhance patient care.",
+      "paragraphThree": "Our mission is to empower healthcare providers with tools that adapt to their growth from small practices to large networks."
+    },
+    "footer": {
+      "copyright": "\u00a9 2026 Vitalia by KinetiaLabs. All rights reserved."
+    },
+    "images": {
+      "vitaliaLogo": "Vitalia Logo",
+      "healthcarePlatform": "Healthcare Management Platform",
+      "multiRole": "Multi-Role Platform",
+      "analytics": "Real-Time Dashboard",
+      "financial": "Billing and Financial Control",
+      "workflow": "Clinical Workflow",
+      "management": "Scalable Clinic Management",
+      "pharmacy": "Pharmacy Management",
+      "privatePractices": "Private Practices",
+      "clinics": "Clinics and Medical Centers",
+      "networks": "Healthcare Networks",
+      "kinetiaLogo": "KinetiaLabs Logo"
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Vitalia - Gestión integral de salud"
+    },
+    "languageSelector": {
+      "ariaLabel": "Cambiar idioma"
+    },
+    "nav": {
+      "features": "Funcionalidades",
+      "clients": "Clientes",
+      "contact": "Contáctanos",
+      "about": "Acerca de"
+    },
+    "buttons": {
+      "tryNow": "PRUÉBALO AHORA",
+      "learnMore": "Conoce más",
+      "startFreeTrial": "INICIAR PRUEBA GRATIS",
+      "getStarted": "COMENZAR",
+      "requestDemo": "SOLICITAR DEMO",
+      "sendNow": "ENVIAR AHORA"
+    },
+    "hero": {
+      "title": "Gestión integral de salud, todo en una plataforma",
+      "description": "Gestiona pacientes, médicos, citas e historias clínicas en un sistema simple."
+    },
+    "features": {
+      "label": "Funcionalidades",
+      "title": "Todo lo que necesitas para gestionar tu clínica",
+      "description": "Ahorra tiempo, mantén todo organizado y mejora la atención al paciente",
+      "cards": {
+        "multiRole": {
+          "title": "Plataforma multirol",
+          "description": "Administradores, médicos, pacientes y personal acceden a paneles personalizados según su rol."
+        },
+        "analytics": {
+          "title": "Panel y analítica en tiempo real",
+          "description": "Monitorea pacientes, ocupación, ingresos y tendencias en tiempo real."
+        },
+        "financial": {
+          "title": "Facturación y control financiero",
+          "description": "Controla ingresos, facturas y pagos en un solo lugar."
+        },
+        "workflow": {
+          "title": "Gestión del flujo clínico",
+          "description": "Maneja consultas, órdenes y seguimientos de forma eficiente"
+        },
+        "management": {
+          "title": "Gestión clínica escalable",
+          "description": "Adapta el sistema a la estructura de tu clínica mientras crece."
+        },
+        "pharmacy": {
+          "title": "Gestión de farmacia y medicamentos",
+          "description": "Integra operaciones de farmacia con recetas e inventario."
+        }
+      }
+    },
+    "clients": {
+      "label": "¿Para quién es Vitalia?",
+      "title": "Desde consultorios privados hasta redes de salud",
+      "description": "Ya sea que dirijas un consultorio privado o administres un gran centro médico, Vitalia se adapta a tus necesidades.",
+      "cards": {
+        "privatePractices": {
+          "title": "Consultorios privados",
+          "description": "Gestiona toda tu práctica con facilidad. Administra pacientes, citas e historias sin complejidad"
+        },
+        "clinics": {
+          "title": "Clínicas y centros médicos",
+          "description": "Mantén tus operaciones conectadas. Coordina equipos, horarios y flujos de trabajo en un solo sistema"
+        },
+        "networks": {
+          "title": "Redes de salud",
+          "description": "Escala con visibilidad y control total. Gestiona múltiples sedes desde una sola plataforma"
+        }
+      }
+    },
+    "plans": {
+      "label": "Planes",
+      "period": "/mes",
+      "free": {
+        "name": "Gratis",
+        "description": "Prueba Vitalia sin compromiso",
+        "features": {
+          "users": "Hasta 2 usuarios",
+          "records": "Historias clínicas básicas",
+          "appointments": "Gestión de citas",
+          "limited": "Funcionalidades limitadas",
+          "access": "Acceso por 14 días"
+        }
+      },
+      "starter": {
+        "badge": "Más elegido",
+        "name": "Inicial",
+        "description": "Perfecto para consultorios privados",
+        "features": {
+          "users": "Hasta 5-10 usuarios",
+          "records": "Historias y antecedentes de pacientes",
+          "scheduling": "Programación de citas",
+          "analytics": "Analítica básica",
+          "prescriptions": "Recetas digitales"
+        }
+      },
+      "professional": {
+        "name": "Profesional",
+        "description": "Para equipos de salud en crecimiento",
+        "features": {
+          "users": "Más usuarios y roles",
+          "analytics": "Analítica avanzada",
+          "billing": "Herramientas financieras y de facturación",
+          "pharmacy": "Integración con farmacia",
+          "support": "Soporte prioritario"
+        }
+      }
+    },
+    "contact": {
+      "label": "Contáctanos",
+      "title": "Ponte en contacto con nosotros",
+      "description": "¿Tienes preguntas o quieres ver Vitalia en acción? Nuestro equipo está aquí para ayudarte.",
+      "items": {
+        "call": "Llamar",
+        "email": "Correo",
+        "location": "Ubicación"
+      },
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje"
+      }
+    },
+    "about": {
+      "label": "Acerca de",
+      "title": "Acerca de KinetiaLabs",
+      "paragraphOne": "KinetiaLabs es una empresa de tecnología enfocada en crear soluciones que transforman la forma en que operan los sistemas de salud.",
+      "paragraphTwo": "Con un fuerte enfoque en integración y eficiencia, desarrollamos plataformas como Vitalia para simplificar flujos clínicos, mejorar la toma de decisiones y potenciar la atención al paciente.",
+      "paragraphThree": "Nuestra misión es empoderar a los proveedores de salud con herramientas que se adaptan a su crecimiento, desde consultorios pequeños hasta grandes redes."
+    },
+    "footer": {
+      "copyright": "\u00a9 2026 Vitalia por KinetiaLabs. Todos los derechos reservados."
+    },
+    "images": {
+      "vitaliaLogo": "Logo de Vitalia",
+      "healthcarePlatform": "Plataforma de gestión de salud",
+      "multiRole": "Plataforma multirol",
+      "analytics": "Panel en tiempo real",
+      "financial": "Facturación y control financiero",
+      "workflow": "Flujo clínico",
+      "management": "Gestión clínica escalable",
+      "pharmacy": "Gestión de farmacia",
+      "privatePractices": "Consultorios privados",
+      "clinics": "Clínicas y centros médicos",
+      "networks": "Redes de salud",
+      "kinetiaLogo": "Logo de KinetiaLabs"
+    }
+  }
+}

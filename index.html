@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalia - Integrated Healthcare Management</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/language-selector.js" defer></script>
 </head>
 <body>
     <!-- HEADER / NAVIGATION -->
@@ -13,21 +14,21 @@
             <div class="navbar">
                 <div class="nav-shell">
                     <div class="logo-section">
-                        <img src="../assets/images/Vitalia_logo.png" alt="Vitalia Logo" class="logo-img">
+                        <img src="assets/images/Vitalia_logo.png" alt="Vitalia Logo" class="logo-img" data-i18n-alt="images.vitaliaLogo">
                         <a href="#home" class="logo">VITALIA</a>
                     </div>
                     <nav class="nav-pill">
-                        <a href="#features">Features</a>
-                        <a href="#clients">Clients</a>
-                        <a href="#contact">Contact Us</a>
-                        <a href="#about">About</a>
+                        <a href="#features" data-i18n="nav.features">Features</a>
+                        <a href="#clients" data-i18n="nav.clients">Clients</a>
+                        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
+                        <a href="#about" data-i18n="nav.about">About</a>
                     </nav>
                     <div class="nav-actions">
-                        <div class="language-selector">
-                            <span>🇬🇧</span>
-                            <span class="dropdown-arrow">▼</span>
-                        </div>
-                        <a href="#plans" class="btn-primary nav-cta">TRY IT NOW</a>
+                        <button class="language-selector" id="language-selector" type="button" data-i18n-aria-label="languageSelector.ariaLabel">
+                            <span data-language-current>EN</span>
+                            <span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+                        </button>
+                        <a href="#plans" class="btn-primary nav-cta" data-i18n="buttons.tryNow">TRY IT NOW</a>
                     </div>
                 </div>
             </div>
@@ -39,15 +40,15 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Integrated Healthcare Management, All in One Platform</h1>
-                    <p>Manage patients, doctors, appointments, and medical records in one simple system.</p>
+                    <h1 data-i18n="hero.title">Integrated Healthcare Management, All in One Platform</h1>
+                    <p data-i18n="hero.description">Manage patients, doctors, appointments, and medical records in one simple system.</p>
                     <div class="hero-buttons">
-                        <a href="#plans" class="btn-primary">TRY IT NOW</a>
-                        <a href="#features" class="btn-learn-more">Learn more</a>
+                        <a href="#plans" class="btn-primary" data-i18n="buttons.tryNow">TRY IT NOW</a>
+                        <a href="#features" class="btn-learn-more" data-i18n="buttons.learnMore">Learn more</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="../assets/images/1-home.png" alt="Healthcare Management Platform" class="hero-main-image">
+                    <img src="assets/images/1-home.png" alt="Healthcare Management Platform" class="hero-main-image" data-i18n-alt="images.healthcarePlatform">
                 </div>
             </div>
         </div>
@@ -57,177 +58,176 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Features</span>
-                <h2>Everything you need to manage your clinic</h2>
-                <p>Save time, stay organized, and improve patient care</p>
+                <span class="section-label" data-i18n="features.label">Features</span>
+                <h2 data-i18n="features.title">Everything you need to manage your clinic</h2>
+                <p data-i18n="features.description">Save time, stay organized, and improve patient care</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <img src="../assets/images/Multirole.png" alt="Multi-Role Platform" class="feature-image">
-                    <h3>Multi-Role Platform</h3>
-                    <p>Admins, doctors, patients and staff access customized dashboards based on their role.</p>
+                    <img src="assets/images/Multirole.png" alt="Multi-Role Platform" class="feature-image" data-i18n-alt="images.multiRole">
+                    <h3 data-i18n="features.cards.multiRole.title">Multi-Role Platform</h3>
+                    <p data-i18n="features.cards.multiRole.description">Admins, doctors, patients and staff access customized dashboards based on their role.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="../assets/images/Analytics.png" alt="Real-Time Dashboard" class="feature-image">
-                    <h3>Real-Time Dashboard & Analytics</h3>
-                    <p>Monitor patients, occupancy, revenue, and trends in real time.</p>
+                    <img src="assets/images/Analytics.png" alt="Real-Time Dashboard" class="feature-image" data-i18n-alt="images.analytics">
+                    <h3 data-i18n="features.cards.analytics.title">Real-Time Dashboard & Analytics</h3>
+                    <p data-i18n="features.cards.analytics.description">Monitor patients, occupancy, revenue, and trends in real time.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="../assets/images/Financial.png" alt="Billing & Financial" class="feature-image">
-                    <h3>Billing & Financial Control</h3>
-                    <p>Track revenue, invoices, and payments in one place.</p>
+                    <img src="assets/images/Financial.png" alt="Billing & Financial" class="feature-image" data-i18n-alt="images.financial">
+                    <h3 data-i18n="features.cards.financial.title">Billing & Financial Control</h3>
+                    <p data-i18n="features.cards.financial.description">Track revenue, invoices, and payments in one place.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="../assets/images/Workflow.png" alt="Clinical Workflow" class="feature-image">
-                    <h3>Clinical Workflow Management</h3>
-                    <p>Handle consultations, orders, and follow-ups efficiently</p>
+                    <img src="assets/images/Workflow.png" alt="Clinical Workflow" class="feature-image" data-i18n-alt="images.workflow">
+                    <h3 data-i18n="features.cards.workflow.title">Clinical Workflow Management</h3>
+                    <p data-i18n="features.cards.workflow.description">Handle consultations, orders, and follow-ups efficiently</p>
                 </div>
                 <div class="feature-card">
-                    <img src="../assets/images/Management.png" alt="Scalable Clinic Management" class="feature-image">
-                    <h3>Scalable Clinic Management</h3>
-                    <p>Adapt the system to your clinic's structure as it grows.</p>
+                    <img src="assets/images/Management.png" alt="Scalable Clinic Management" class="feature-image" data-i18n-alt="images.management">
+                    <h3 data-i18n="features.cards.management.title">Scalable Clinic Management</h3>
+                    <p data-i18n="features.cards.management.description">Adapt the system to your clinic's structure as it grows.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="../assets/images/Pharmacy.png" alt="Pharmacy Management" class="feature-image">
-                    <h3>Pharmacy & Medication Management</h3>
-                    <p>Integrate pharmacy operations with prescriptions and inventory.</p>
+                    <img src="assets/images/Pharmacy.png" alt="Pharmacy Management" class="feature-image" data-i18n-alt="images.pharmacy">
+                    <h3 data-i18n="features.cards.pharmacy.title">Pharmacy & Medication Management</h3>
+                    <p data-i18n="features.cards.pharmacy.description">Integrate pharmacy operations with prescriptions and inventory.</p>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- WHO IS VITALIA FOR SECTION -->
+    <!-- WHO IS VITALIA FOR SECTION -->
     <section id="clients" class="who-is-vitalia">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Who is Vitalia for?</span>
-                <h2>From solo practices to healthcare networks</h2>
-                <p>Whether you run a private practice or manage a large medical center, Vitalia adapts to your needs.</p>
+                <span class="section-label" data-i18n="clients.label">Who is Vitalia for?</span>
+                <h2 data-i18n="clients.title">From solo practices to healthcare networks</h2>
+                <p data-i18n="clients.description">Whether you run a private practice or manage a large medical center, Vitalia adapts to your needs.</p>
             </div>
             <div class="clients-grid">
                 <div class="client-card">
-                    <h3>Private Practices</h3>
-                    <img src="assets/images/Private_practices.jpg" alt="Private Practices" class="client-image">
-                    <p>Run your entire practice with ease. Manage patients, appointments, and records without complexity</p>
+                    <h3 data-i18n="clients.cards.privatePractices.title">Private Practices</h3>
+                    <img src="assets/images/Private_practices.jpg" alt="Private Practices" class="client-image" data-i18n-alt="images.privatePractices">
+                    <p data-i18n="clients.cards.privatePractices.description">Run your entire practice with ease. Manage patients, appointments, and records without complexity</p>
                 </div>
                 <div class="client-card">
-                    <h3>Clinics & Medical Centers</h3>
-                    <img src="../assets/images/Clinics_&_Medical_Centers.jpg" alt="Clinics & Medical Centers" class="client-image">
-                    <p>Keep your operations fully connected. Coordinate teams, schedules, and workflows in one system</p>
+                    <h3 data-i18n="clients.cards.clinics.title">Clinics & Medical Centers</h3>
+                    <img src="assets/images/Clinics_&_Medical_Centers.jpg" alt="Clinics & Medical Centers" class="client-image" data-i18n-alt="images.clinics">
+                    <p data-i18n="clients.cards.clinics.description">Keep your operations fully connected. Coordinate teams, schedules, and workflows in one system</p>
                 </div>
                 <div class="client-card">
-                    <h3>Healthcare Networks</h3>
-                    <img src="../assets/images/Healthcare_Networks.png" alt="Healthcare Networks" class="client-image">
-                    <p>Scale with full visibility and control. Manage multiple locations from a single platform</p>
+                    <h3 data-i18n="clients.cards.networks.title">Healthcare Networks</h3>
+                    <img src="assets/images/Healthcare_Networks.png" alt="Healthcare Networks" class="client-image" data-i18n-alt="images.networks">
+                    <p data-i18n="clients.cards.networks.description">Scale with full visibility and control. Manage multiple locations from a single platform</p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- PLANS SECTION -->
     <section id="plans" class="plans">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Plans</span>
+                <span class="section-label" data-i18n="plans.label">Plans</span>
             </div>
             <div class="plans-grid">
                 <div class="plan-card plan-free">
-                    <h3>Free</h3>
-                    <p class="plan-description">Try Vitalia with no commitment</p>
+                    <h3 data-i18n="plans.free.name">Free</h3>
+                    <p class="plan-description" data-i18n="plans.free.description">Try Vitalia with no commitment</p>
                     <ul class="plan-features">
-                        <li>Up to 2 users</li>
-                        <li>Basic patient records</li>
-                        <li>Appointment management</li>
-                        <li>Limited features</li>
-                        <li>14-day access</li>
+                        <li data-i18n="plans.free.features.users">Up to 2 users</li>
+                        <li data-i18n="plans.free.features.records">Basic patient records</li>
+                        <li data-i18n="plans.free.features.appointments">Appointment management</li>
+                        <li data-i18n="plans.free.features.limited">Limited features</li>
+                        <li data-i18n="plans.free.features.access">14-day access</li>
                     </ul>
                     <div class="plan-price">
                         <span class="price">$0</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="plans.period">/month</span>
                     </div>
-                    <button class="btn-secondary">START FREE TRIAL</button>
+                    <button class="btn-secondary" data-i18n="buttons.startFreeTrial">START FREE TRIAL</button>
                 </div>
 
                 <div class="plan-card plan-starter plan-featured">
-                    <div class="top-choice">Top choice</div>
-                    <h3>Starter</h3>
-                    <p class="plan-description">Perfect for private practices</p>
+                    <div class="top-choice" data-i18n="plans.starter.badge">Top choice</div>
+                    <h3 data-i18n="plans.starter.name">Starter</h3>
+                    <p class="plan-description" data-i18n="plans.starter.description">Perfect for private practices</p>
                     <ul class="plan-features">
-                        <li>Up to 5-10 users</li>
-                        <li>Patient records & history</li>
-                        <li>Appointment scheduling</li>
-                        <li>Basic analytics</li>
-                        <li>Digital prescriptions</li>
+                        <li data-i18n="plans.starter.features.users">Up to 5-10 users</li>
+                        <li data-i18n="plans.starter.features.records">Patient records & history</li>
+                        <li data-i18n="plans.starter.features.scheduling">Appointment scheduling</li>
+                        <li data-i18n="plans.starter.features.analytics">Basic analytics</li>
+                        <li data-i18n="plans.starter.features.prescriptions">Digital prescriptions</li>
                     </ul>
                     <div class="plan-price">
                         <span class="price">$40-70</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="plans.period">/month</span>
                     </div>
-                    <button class="btn-primary">GET STARTED</button>
+                    <button class="btn-primary" data-i18n="buttons.getStarted">GET STARTED</button>
                 </div>
 
                 <div class="plan-card plan-professional">
-                    <h3>Professional</h3>
-                    <p class="plan-description">For growing healthcare teams</p>
+                    <h3 data-i18n="plans.professional.name">Professional</h3>
+                    <p class="plan-description" data-i18n="plans.professional.description">For growing healthcare teams</p>
                     <ul class="plan-features">
-                        <li>More users & roles</li>
-                        <li>Advanced analytics</li>
-                        <li>Billing & financial tools</li>
-                        <li>Pharmacy integration</li>
-                        <li>Priority support</li>
+                        <li data-i18n="plans.professional.features.users">More users & roles</li>
+                        <li data-i18n="plans.professional.features.analytics">Advanced analytics</li>
+                        <li data-i18n="plans.professional.features.billing">Billing & financial tools</li>
+                        <li data-i18n="plans.professional.features.pharmacy">Pharmacy integration</li>
+                        <li data-i18n="plans.professional.features.support">Priority support</li>
                     </ul>
                     <div class="plan-price">
                         <span class="price">$80-160</span>
-                        <span class="period">/month</span>
+                        <span class="period" data-i18n="plans.period">/month</span>
                     </div>
-                    <button class="btn-secondary">REQUEST A DEMO</button>
+                    <button class="btn-secondary" data-i18n="buttons.requestDemo">REQUEST A DEMO</button>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- CONTACT SECTION -->
+    <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Contact Us</span>
+                <span class="section-label" data-i18n="contact.label">Contact Us</span>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Get in touch with us</h2>
-                    <p>Have questions or want to see Vitalia in action? Our team is here to help.</p>
-                    
+                    <h2 data-i18n="contact.title">Get in touch with us</h2>
+                    <p data-i18n="contact.description">Have questions or want to see Vitalia in action? Our team is here to help.</p>
+
                     <div class="contact-item">
-                        <div class="contact-icon">📞</div>
+                        <div class="contact-icon" aria-hidden="true">&#9742;</div>
                         <div>
-                            <h4>Call</h4>
+                            <h4 data-i18n="contact.items.call">Call</h4>
                             <p>084524145547</p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon" aria-hidden="true">&#9993;</div>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact.items.email">Email</h4>
                             <p>KinetiaLabs@gmail.com</p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon" aria-hidden="true">&#9673;</div>
                         <div>
-                            <h4>Location</h4>
+                            <h4 data-i18n="contact.items.location">Location</h4>
                             <p>Lima, Peru</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <input type="text" placeholder="Name" class="form-input">
-                    <input type="email" placeholder="Email address" class="form-input">
-                    <textarea placeholder="Message" class="form-input form-textarea"></textarea>
-                    <button class="btn-primary btn-send">SEND NOW</button>
+                    <input type="text" placeholder="Name" class="form-input" data-i18n-placeholder="contact.form.name">
+                    <input type="email" placeholder="Email address" class="form-input" data-i18n-placeholder="contact.form.email">
+                    <textarea placeholder="Message" class="form-input form-textarea" data-i18n-placeholder="contact.form.message"></textarea>
+                    <button class="btn-primary btn-send" data-i18n="buttons.sendNow">SEND NOW</button>
                 </div>
             </div>
         </div>
@@ -237,17 +237,17 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">About</span>
+                <span class="section-label" data-i18n="about.label">About</span>
             </div>
             <div class="about-wrapper">
                 <div class="about-image">
-                    <img src="../assets/images/Kinetia_logo.png" alt="KinetiaLabs Logo">
+                    <img src="assets/images/Kinetia_logo.png" alt="KinetiaLabs Logo" data-i18n-alt="images.kinetiaLogo">
                 </div>
                 <div class="about-content">
-                    <h2>About KinetiaLabs</h2>
-                    <p>KinetiaLabs is a technology company focused on building solutions that transform how healthcare systems operate.</p>
-                    <p>With a strong emphasis on integration and efficiency, we develop platforms like Vitalia to simplify clinical workflows, improve decision-making, and enhance patient care.</p>
-                    <p>Our mission is to empower healthcare providers with tools that adapt to their growth from small practices to large networks.</p>
+                    <h2 data-i18n="about.title">About KinetiaLabs</h2>
+                    <p data-i18n="about.paragraphOne">KinetiaLabs is a technology company focused on building solutions that transform how healthcare systems operate.</p>
+                    <p data-i18n="about.paragraphTwo">With a strong emphasis on integration and efficiency, we develop platforms like Vitalia to simplify clinical workflows, improve decision-making, and enhance patient care.</p>
+                    <p data-i18n="about.paragraphThree">Our mission is to empower healthcare providers with tools that adapt to their growth from small practices to large networks.</p>
                 </div>
             </div>
         </div>
@@ -256,7 +256,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Vitalia by KinetiaLabs. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Vitalia by KinetiaLabs. All rights reserved.</p>
         </div>
     </footer>
 </body>
