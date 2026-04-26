@@ -856,3 +856,54 @@ body {
     width: 100%;
     margin-top: 12px;
 }
+
+
+/* ===================================
+   ABOUT SECTION
+   =================================== */
+.about {
+    padding: 44px 0 100px;
+    background-color: var(--dark-bg);
+}
+
+.about-wrapper {
+    background-color: var(--card-bg);
+    padding: 54px 58px;
+    border-radius: 26px;
+    border: 1px solid var(--border-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    background-color: white;
+    padding: 22px;
+    border-radius: 32px;
+    object-fit: contain;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+    font-weight: 500;
+}
+
+.about-content p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
