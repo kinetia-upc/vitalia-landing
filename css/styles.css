@@ -177,16 +177,37 @@ body {
 }
 
 .language-selector {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
+    min-width: 64px;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
     color: var(--text-light);
     cursor: pointer;
+    font: inherit;
     font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.language-selector:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
 }
 
 .dropdown-arrow {
     font-size: 9px;
+    line-height: 1;
 }
 
 .nav-cta {
