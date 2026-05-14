@@ -9,6 +9,7 @@
     "nav": {
       "features": "Features",
       "clients": "Clients",
+      "plans": "Plans",
       "contact": "Contact Us",
       "about": "About"
     },
@@ -162,6 +163,7 @@
     "nav": {
       "features": "Funcionalidades",
       "clients": "Clientes",
+      "plans": "Planes",
       "contact": "Contáctanos",
       "about": "Acerca de"
     },
