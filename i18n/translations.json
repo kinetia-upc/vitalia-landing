@@ -11,7 +11,9 @@
       "clients": "Clients",
       "plans": "Plans",
       "contact": "Contact Us",
-      "about": "About"
+      "about": "About",
+      "team": "Team",
+      "product": "Product"
     },
     "buttons": {
       "tryNow": "OPEN APP",
@@ -135,6 +137,16 @@
       "paragraphTwo": "With a strong emphasis on integration and efficiency, we develop platforms like Vitalia to simplify clinical workflows, improve decision-making, and enhance patient care.",
       "paragraphThree": "Our mission is to empower healthcare providers with tools that adapt to their growth from small practices to large networks."
     },
+    "team": {
+      "label": "Team",
+      "title": "About The Team",
+      "videoTitle": "About The Team"
+    },
+    "product": {
+      "label": "Product",
+      "title": "About The Product",
+      "videoTitle": "About The Product"
+    },
     "footer": {
       "copyright": "\u00a9 2026 Vitalia by KinetiaLabs. All rights reserved."
     },
@@ -165,7 +177,9 @@
       "clients": "Clientes",
       "plans": "Planes",
       "contact": "Contáctanos",
-      "about": "Acerca de"
+      "about": "Acerca de",
+      "team": "Equipo",
+      "product": "Producto"
     },
     "buttons": {
       "tryNow": "ABRIR APP",
@@ -288,6 +302,16 @@
       "paragraphOne": "KinetiaLabs es una empresa de tecnología enfocada en crear soluciones que transforman la forma en que operan los sistemas de salud.",
       "paragraphTwo": "Con un fuerte enfoque en integración y eficiencia, desarrollamos plataformas como Vitalia para simplificar flujos clínicos, mejorar la toma de decisiones y potenciar la atención al paciente.",
       "paragraphThree": "Nuestra misión es empoderar a los proveedores de salud con herramientas que se adaptan a su crecimiento, desde consultorios pequeños hasta grandes redes."
+    },
+    "team": {
+      "label": "Equipo",
+      "title": "Sobre el equipo",
+      "videoTitle": "Sobre el equipo"
+    },
+    "product": {
+      "label": "Producto",
+      "title": "Sobre el producto",
+      "videoTitle": "Sobre el producto"
     },
     "footer": {
       "copyright": "\u00a9 2026 Vitalia por KinetiaLabs. Todos los derechos reservados."
