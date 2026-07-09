@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/Vitalia_logo.png">
     <title>Vitalia - Integrated Healthcare Management</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/language-selector.js" defer></script>
@@ -17,7 +18,7 @@
                         <img src="assets/images/Vitalia_logo.png" alt="Vitalia Logo" class="logo-img" data-i18n-alt="images.vitaliaLogo">
                         <a href="#home" class="logo">VITALIA</a>
                     </div>
-                    <nav class="nav-pill">
+                    <nav class="nav-pill" aria-label="Main navigation">
                         <a href="#features" data-i18n="nav.features">Features</a>
                         <a href="#clients" data-i18n="nav.clients">Clients</a>
                         <a href="#plans" data-i18n="nav.plans">Plans</a>
@@ -29,7 +30,6 @@
                     <div class="nav-actions">
                         <button class="language-selector" id="language-selector" type="button" data-i18n-aria-label="languageSelector.ariaLabel">
                             <span data-language-current>EN</span>
-                            <span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
                         </button>
                         <a href="https://vitalia-frontend-kinetia.vercel.app" class="btn-primary nav-cta" data-i18n="buttons.tryNow">OPEN APP</a>
                     </div>
@@ -190,12 +190,12 @@
         </div>
     </section>
 
-    <!-- PRODUCT SECTION -->
-    <section id="product" class="team">
+    <!-- PRODUCT VIDEO SECTION -->
+        <section id="product" class="product">
         <div class="container">
             <div class="section-header">
                 <span class="section-label" data-i18n="product.label">Product</span>
-                <h2 data-i18n="product.title">About The Product</h2>
+                <h2 data-i18n="product.title">Video About The Product</h2>
             </div>
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/iEpRiV-OPjU" data-i18n-aria-label="product.videoTitle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
@@ -269,12 +269,12 @@
         </div>
     </section>
 
-    <!-- TEAM SECTION -->
+    <!-- TEAM VIDEO SECTION -->
     <section id="team" class="team">
         <div class="container">
             <div class="section-header">
                 <span class="section-label" data-i18n="team.label">Team</span>
-                <h2 data-i18n="team.title">About The Team</h2>
+                <h2 data-i18n="team.title">Video About The Team</h2>
             </div>
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/1H503xuijtA" data-i18n-aria-label="team.videoTitle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>

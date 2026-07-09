@@ -205,10 +205,7 @@ body {
     outline-offset: 3px;
 }
 
-.dropdown-arrow {
-    font-size: 9px;
-    line-height: 1;
-}
+
 
 .nav-cta {
     min-width: 164px;
@@ -931,6 +928,11 @@ body {
    TEAM SECTION
    =================================== */
 .team {
+    padding: 0 0 100px;
+    background-color: var(--dark-bg);
+}
+
+.product {
     padding: 0 0 100px;
     background-color: var(--dark-bg);
 }

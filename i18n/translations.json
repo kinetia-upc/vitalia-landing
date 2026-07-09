@@ -139,13 +139,13 @@
     },
     "team": {
       "label": "Team",
-      "title": "About The Team",
-      "videoTitle": "About The Team"
+      "title": "Video About The Team",
+      "videoTitle": "Video About The Team"
     },
     "product": {
       "label": "Product",
-      "title": "About The Product",
-      "videoTitle": "About The Product"
+      "title": "Video About The Product",
+      "videoTitle": "Video About The Product"
     },
     "footer": {
       "copyright": "\u00a9 2026 Vitalia by KinetiaLabs. All rights reserved."
@@ -305,13 +305,13 @@
     },
     "team": {
       "label": "Equipo",
-      "title": "Sobre el equipo",
-      "videoTitle": "Sobre el equipo"
+      "title": "Video Sobre el equipo",
+      "videoTitle": "Video Sobre el equipo"
     },
     "product": {
       "label": "Producto",
-      "title": "Sobre el producto",
-      "videoTitle": "Sobre el producto"
+      "title": "Video Sobre el producto",
+      "videoTitle": "Video Sobre el producto"
     },
     "footer": {
       "copyright": "\u00a9 2026 Vitalia por KinetiaLabs. Todos los derechos reservados."
